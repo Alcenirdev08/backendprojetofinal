@@ -1,5 +1,2 @@
-import { Despesa } from '../../domain/despesa';
-
-export interface DespesaRepository {
-    //seu codigo aqui
-}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });

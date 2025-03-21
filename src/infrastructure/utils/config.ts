@@ -1,5 +1,5 @@
 import { RepositoryData } from '../database/repository';
-import { CreateDespesaUseCase } from '../../application/usecases/create-despesa-use-case';
+import { CreateDespesaUseCase } from '../../application/use-cases/create-despesa-use-case';
 import { GetDespesasByUserUseCase } from '../../application/use-cases/get-despesas-by-user-use-case';
 import { DespesaController } from '../../interface/despesa-controller';
 import { RepositoryAI } from '../genai/repository';
@@ -21,4 +21,5 @@ export function configureDependencies() {
         despesaController,
         chatController
     }
+
 } 

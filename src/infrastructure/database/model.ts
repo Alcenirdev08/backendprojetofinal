@@ -3,28 +3,29 @@ import { model, Schema } from 'mongoose'
 const DespesaSchema = new Schema({
     descricao: {
         type: String,
-        required: true
+        require: true
     },
     categoria: {
         type: String,
-        required: true
+        require: true
     },
     valor: {
         type: Number,
-        required: true
+        require: true
     },
     tipo: {
         type: String,
-        required: true
+        require: true
     },
     data: {
         type: String,
-        required: true
+        require: true
     },
     userId: {
         type: String,
-        required: true
-    },
+        require: true
+    }
+
 })
 
 export const DespesaModel = model('despesas', DespesaSchema)

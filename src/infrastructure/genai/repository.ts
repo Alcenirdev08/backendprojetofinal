@@ -1,4 +1,4 @@
-import { ChatRepository } from "../../application/repositories/chat-repository";
+import { ChatRepository } from '../../application/repositories/chat-respository';
 import { Despesa } from "../../domain/despesa";
 import { ai } from '../genai/connection'
 import { v4 as uuidv4 } from 'uuid';

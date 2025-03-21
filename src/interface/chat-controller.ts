@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { CreateChatUseCase } from '../application/use-cases/createChatUseCase';
+import { CreateChatUseCase } from '../application/use-cases/create-chat-use-case';
 
 export class ChatController {
     constructor(
@@ -11,6 +11,7 @@ export class ChatController {
 
         try {
             const chatSession = await this.createChatUseCase.execute(uid, message);
+
             res.status(201).json(chatSession);
         } catch (error: any) {
             res.status(400).json({ error: error.message });
